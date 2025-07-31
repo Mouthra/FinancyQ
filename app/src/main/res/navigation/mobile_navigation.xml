@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.financyq.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_analize_q"
+            app:destination="@id/navigation_analize_q" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_analize_q"
+        android:name="com.example.financyq.ui.analizeq.AnalizeQFragment"
+        android:label="@string/title_analizeq"
+        tools:layout="@layout/fragment_analize_q" >
+        <action
+            android:id="@+id/action_navigation_analize_q_to_navigation_edu_finance"
+            app:destination="@id/navigation_edu_finance" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_edu_finance"
+        android:name="com.example.financyq.ui.edufinance.EduFinanceFragment"
+        android:label="@string/title_edufinance"
+        tools:layout="@layout/fragment_edu_finance" >
+        <action
+            android:id="@+id/action_navigation_edu_finance_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.financyq.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+</navigation>

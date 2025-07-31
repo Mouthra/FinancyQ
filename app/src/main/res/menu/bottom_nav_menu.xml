@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/baseline_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_analize_q"
+        android:icon="@drawable/baseline_analizeq"
+        android:title="@string/title_analizeq" />
+
+    <item
+        android:id="@+id/navigation_edu_finance"
+        android:icon="@drawable/baseline_edufinance"
+        android:title="@string/title_edufinance" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/baseline_person"
+        android:title="@string/title_profile" />
+
+</menu>

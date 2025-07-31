@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomDatePickerTheme"
+        parent="ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen">
+        <!-- Jadikan latar putih -->
+        <item name="android:background">@color/white</item>
+        <!-- Atau override warna surface komponen Material -->
+        <item name="colorSurface">@color/white</item>
+    </style>
+</resources>

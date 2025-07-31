@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:layout_anchorGravity="top">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/baseline_arrow_back"
+            android:contentDescription="@string/back"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_aboutus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_us"
+            android:textSize="20sp"
+            android:textColor="@color/orange"
+            android:fontFamily="@font/poppins_bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_back"
+            app:layout_constraintBottom_toBottomOf="@id/btn_back"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/about_desc"
+                android:textSize="14sp"
+                android:textColor="@color/orange"
+                android:fontFamily="@font/poppins"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_machine_learning_team"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/machine_learning_team"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/orange"
+                app:layout_constraintTop_toBottomOf="@id/tv_description"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_machine_learning"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ML_Team"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/orange"
+                app:layout_constraintTop_toBottomOf="@id/tv_machine_learning_team"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_cloud_computing_team"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cloud_computing_team"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/orange"
+                app:layout_constraintTop_toBottomOf="@id/tv_machine_learning"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_cloud_computing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/CC_Team"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/orange"
+                app:layout_constraintTop_toBottomOf="@id/tv_cloud_computing_team"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_mobile_development_team"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_development_team"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/orange"
+                app:layout_constraintTop_toBottomOf="@id/tv_cloud_computing"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_mobile_development"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/MD_Team"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/orange"
+                app:layout_constraintTop_toBottomOf="@id/tv_mobile_development_team"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"/>
+
+            <ImageView
+                android:id="@+id/logo_bangkit"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo_bangkit"
+                app:layout_constraintEnd_toStartOf="@id/logo_kampus_merdeka"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_mobile_development"
+                android:layout_marginTop="16dp"/>
+
+            <ImageView
+                android:id="@+id/logo_kampus_merdeka"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo_kampus_merdeka_kemendikbud"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/logo_bangkit"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
